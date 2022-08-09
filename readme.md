@@ -41,8 +41,8 @@ as well as the `bot-author` output for easy consumption.
 The action also runs:
 
 ```
-git config --local user.name $BOT_NAME
-git config --local user.email $BOT_EMAIL
+git config --global user.name $BOT_NAME
+git config --global user.email $BOT_EMAIL
 ```
 
 so that git commands can be run the resulting defaults already applied.

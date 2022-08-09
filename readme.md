@@ -61,9 +61,6 @@ jobs:
   includes:
     runs-on: ubuntu-latest
     steps:
-      - name: 🤘 checkout
-        uses: actions/checkout@v2
-
       - name: 🤖 defaults
         uses: devlooped/actions-bot@v1
         with:
@@ -71,6 +68,11 @@ jobs:
           email: ${{ secrets.BOT_EMAIL }}
           gh_token: ${{ secrets.GH_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🤘 checkout
+        uses: actions/checkout@v2
+        with:
+          token: ${{ env.GH_TOKEN }}
 
       # add some step that changes files
 

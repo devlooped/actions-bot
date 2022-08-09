@@ -8,11 +8,11 @@ inputs:
   name: 
     description: The default name of the bot account. Defaults to $GITHUB_ACTOR.
     required: false
-    default: ''
+    default: ${{ github.actor }}
   email: 
     description: The default email of the bot account. Defaults to $GITHUB_ACTOR@users.noreply.github.com.
     required: false
-    default: ''
+    default: '${{ github.actor }}@users.noreply.github.com'
   gh_token:
     description: The token to set as $GH_TOKEN environment variable.
     required: false
@@ -20,7 +20,7 @@ inputs:
   github_token:
     description: Fallback token to use for $GH_TOKEN if gh_token is empty.
     required: false
-    default: ''
+    default: ${{ github.token }}
 
 branding:
   icon: "edit-3"

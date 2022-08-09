@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.0.0](https://github.com/devlooped/actions-bot/tree/v1.0.0) (2022-08-09)
+
+[Full Changelog](https://github.com/devlooped/actions-bot/compare/v1...v1.0.0)
+
 ## [v1](https://github.com/devlooped/actions-bot/tree/v1) (2022-08-09)
 
 [Full Changelog](https://github.com/devlooped/actions-bot/compare/14e2c0c9e6e7d4ad78f774b765329a65c9b8df48...v1)

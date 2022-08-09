@@ -1,0 +1,26 @@
+name: release
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      TAG_NAME:
+        description: "Tag name that the major tag will point to"
+        required: true
+
+env:
+  TAG_NAME: ${{ github.event.inputs.TAG_NAME || github.event.release.tag_name }}
+
+permissions:
+  contents: write
+
+jobs:
+  update_tag:
+    name: Bump major to ${{ env.TAG_NAME }} tag
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬆ bump to ${{ env.TAG_NAME }}
+        id: update-major-tag
+        uses: actions/publish-action@v0.1.0
+        with:
+          source-tag: ${{ env.TAG_NAME }}

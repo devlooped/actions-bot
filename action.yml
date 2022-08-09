@@ -89,5 +89,5 @@ runs:
         fi
         echo "::set-output name=bot-author::$BOT_AUTHOR"
 
-        git config --local user.name $BOT_NAME
-        git config --local user.email $BOT_EMAIL
+        git config --global user.name $BOT_NAME
+        git config --global user.email $BOT_EMAIL

@@ -1,0 +1,65 @@
+[file ".github/FUNDING.yml"]
+	url = https://github.com/devlooped/.github/blob/main/.github/FUNDING.yml
+	sha = 39f4c591716ff50dd035d2fade35e5822489ab7f
+	etag = a944c728facd033bbdfb4ff8d0ef10d0b3a457c277dc499458df0ffc7e6409da
+	weak
+[file ".github/workflows/dotnet-file.yml"]
+	url = https://github.com/devlooped/oss/blob/main/.github/workflows/dotnet-file.yml
+	sha = d94ddb1384daf67602be0c4e02fad6c86b6c79b3
+	etag = a180d38577ce5f69caf05034d8332e99cb837fe8cfdfc0dee59cf9b6e4dbb61d
+	weak
+[file ".gitignore"]
+	url = https://github.com/devlooped/oss/blob/main/.gitignore
+	sha = c78868eba59a3e04602434684f9eac241fef13fb
+	etag = 1c1705a3f0ed65e33c9133996ebaa100aa445a8b968b2904ad48fef938702006
+	weak
+[file "code-of-conduct.md"]
+	url = https://github.com/devlooped/oss/blob/main/code-of-conduct.md
+	sha = f72699c9d52f02e6a3411ef589f2a02007c5e5af
+	etag = 4857c01bb695f09bf6912d778951c3065d9dd565e5de3d0827f40432d0e4c613
+	weak
+[file "license.txt"]
+	url = https://github.com/devlooped/oss/blob/main/license.txt
+	sha = 0683ee777d7d878d4bf013d7deea352685135a05
+	etag = 2c6335b37e4ae05eea7c01f5d0c9d82b49c488f868a8b5ba7bff7c6ff01f3994
+	weak
+[file "security.md"]
+	url = https://github.com/devlooped/oss/blob/main/security.md
+	sha = a0f58a6d63e48ae6e55944c556d0bc94476dc8df
+	etag = fc8101fd914820db3e6b42d608dc46aefbc60c830ac721ed3917daead3727dbd
+	weak
+[file "support.md"]
+	url = https://github.com/devlooped/oss/blob/main/support.md
+	sha = a0f58a6d63e48ae6e55944c556d0bc94476dc8df
+	etag = 2d47e2fc4fdfa3515203d452674566e3df507461f9938f451a06d79deb687d24
+	weak
+[file ".github/workflows/changelog.yml"]
+	url = https://github.com/devlooped/oss/blob/main/.github/workflows/changelog.yml
+	sha = 15e94864c0806dd899b4b8f7bb4fc8b99a62111a
+	etag = 3a0f1fb7819245b4b35c918f86c177ffa48cbecd153c62be2e245c02ca993508
+	weak
+[file ".github/workflows/defaults/action.yml"]
+	url = https://github.com/devlooped/oss/blob/main/.github/workflows/defaults/action.yml
+	sha = 4253d8ae0f92625f475fabba36b67b2df7cb3806
+	etag = 2db4daaf02093f57836b6045053e72d846493935d5129b6b7ac3f5aea9dca4b4
+	weak
+[file "docs/footer.md"]
+	url = https://github.com/devlooped/oss/blob/main/docs/footer.md
+	sha = 06e7171fa1d1f49300278ebf11020b8d03ef44ac
+	etag = 2e47c8bba7ea60a722ce2bfc8a0222e27bc33f25073486523710383540dc6257
+	weak
+[file "docs/sponsors.md"]
+	url = https://github.com/devlooped/sponsors/blob/main/sponsors.md
+	sha = 0a67f1a43b12eabc5fe3229fd9c9239dd97fc645
+	etag = 39e8d18b010c445fb65046c8504c1a95d66d5b4c6aff2f859d030a98faf182de
+	weak
+[file ".github/workflows/release-notes.yml"]
+	url = https://github.com/devlooped/oss/blob/main/.github/workflows/release-notes.yml
+	sha = be8f625e4cf5c2c572c7e56ba6dc4c4935ab0c00
+	etag = d1de9cb9c403ed8632d22d4cc153ae63b075266b9ce638b9ac73fd47dd2bccc1
+	weak
+[file ".editorconfig"]
+	url = https://github.com/devlooped/oss/blob/main/.editorconfig
+	sha = 369cd2bd49ce032f616a2fcb4c997535dbe8d9aa
+	etag = 4e857df48d0abd81512350d6b3b1a1c83b78284be65bd5172a4ec8e52cd04e2d
+	weak

@@ -1,0 +1,42 @@
+name: +M▼ includes
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - '**.md'    
+
+jobs:
+  includes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🤘 checkout
+        uses: actions/checkout@v2
+
+      - name: 🔍 defaults
+        uses: ./.github/workflows/defaults
+        env:
+          GH_TOKEN_SECRET: ${{ secrets.GH_TOKEN }}
+          BOT_NAME_SECRET: ${{ secrets.BOT_NAME }}
+          BOT_EMAIL_SECRET: ${{ secrets.BOT_EMAIL }}
+          BOT_AUTHOR_SECRET: ${{ secrets.BOT_AUTHOR }}
+
+      - name: +Mᐁ includes
+        uses: ./../actions-includes
+        with:
+          validate: false
+
+      - name: ✍ pull request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          base: main
+          branch: markdown-includes
+          delete-branch: true
+          labels: docs
+          author: ${{ env.BOT_AUTHOR }}
+          committer: ${{ env.BOT_AUTHOR }}
+          commit-message: +Mᐁ includes
+          title: +Mᐁ includes
+          body: +Mᐁ includes
+          token: ${{ env.GH_TOKEN }}

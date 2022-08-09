@@ -1,0 +1,95 @@
+name: Bot Defaults
+author: Daniel Cazzulino
+description: |
+    A GitHub action that sets git defaults (name, email, author) for 
+    automated bot workflows from secrets or environment variables, 
+    as well as the GH_TOKEN environment variable which can be reliably 
+    used after this action runs.
+
+inputs:
+  name: 
+    description: The default name of the bot account. Defaults to $GITHUB_ACTOR.
+    required: false
+    default: ''
+  email: 
+    description: The default email of the bot account. Defaults to $GITHUB_ACTOR@users.noreply.github.com.
+    required: false
+    default: ''
+  gh_token:
+    description: The token to set as $GH_TOKEN environment variable.
+    required: false
+    default: ''
+  github_token:
+    description: Fallback token to use for $GH_TOKEN if gh_token is empty.
+    required: false
+    default: ''
+
+branding:
+  icon: "edit-3"
+  color: "purple"
+
+runs:
+  using: "composite"
+  steps:
+    - name: 🤖 defaults
+      shell: bash
+      run: |
+        if [ -z "$GH_TOKEN" ]
+        then
+          if [ -z "${{ inputs.gh_token }}" ]
+          then
+            if [ -z "${{ inputs.github_token }}" ]
+            then
+              echo "Either gh_token or github_token must have a value."
+              exit 1
+            fi
+            echo "Using github_token from inputs"
+            echo "GH_TOKEN=${{ inputs.github_token }}" >> $GITHUB_ENV
+            echo "::set-output name=bot-token::${{ inputs.github_token }}"
+          else
+            echo "Using gh_token from inputs"
+            echo "GH_TOKEN=${{ inputs.gh_token }}" >> $GITHUB_ENV
+            echo "::set-output name=bot-token::${{ inputs.gh_token }}"
+          fi
+        else
+          echo "::set-output name=bot-token::$GH_TOKEN"
+        fi
+
+        if [ -z "$BOT_NAME"]
+        then
+          if [ -z "${{ inputs.name }}" ]
+          then
+            echo "Using default GITHUB_ACTOR as BOT_NAME"
+            BOT_NAME="$GITHUB_ACTOR"
+          else
+            echo "Using custom name from inputs"
+            BOT_NAME="${{ inputs.name }}"
+          fi
+          echo "BOT_NAME=$BOT_NAME" >> $GITHUB_ENV
+        fi
+        echo "::set-output name=bot-name::$BOT_NAME"
+
+        if [ -z "$BOT_EMAIL"]
+        then
+          if [ -z "${{ inputs.email }}" ]
+          then
+            echo "Using default email as BOT_EMAIL"
+            BOT_EMAIL="$GITHUB_ACTOR@users.noreply.github.com"
+          else
+            echo "Using custom email from inputs"
+            BOT_EMAIL="${{ inputs.email }}"
+          fi
+          echo "BOT_EMAIL=$BOT_EMAIL" >> $GITHUB_ENV
+        fi
+        echo "::set-output name=bot-email::$BOT_EMAIL"
+        
+        if [ -z "$BOT_AUTHOR"]
+        then
+          echo "Using default BOT_NAME <BOT_EMAIL> as BOT_AUTHOR"
+          BOT_AUTHOR="$BOT_NAME <$BOT_EMAIL>"
+          echo "BOT_AUTHOR=$BOT_AUTHOR" >> $GITHUB_ENV
+        fi
+        echo "::set-output name=bot-author::$BOT_AUTHOR"
+
+        git config --local user.name $BOT_NAME
+        git config --local user.email $BOT_EMAIL

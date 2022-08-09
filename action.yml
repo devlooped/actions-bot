@@ -2,9 +2,7 @@ name: Bot Defaults
 author: Daniel Cazzulino
 description: |
     A GitHub action that sets git defaults (name, email, author) for 
-    automated bot workflows from secrets or environment variables, 
-    as well as the GH_TOKEN environment variable which can be reliably 
-    used after this action runs.
+    automated bot workflows from secrets or env vars.
 
 inputs:
   name: 

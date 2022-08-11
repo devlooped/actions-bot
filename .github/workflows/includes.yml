@@ -23,7 +23,7 @@ jobs:
           BOT_AUTHOR_SECRET: ${{ secrets.BOT_AUTHOR }}
 
       - name: +Mᐁ includes
-        uses: ./../actions-includes
+        uses: devlooped/actions-include@v1
         with:
           validate: false
 

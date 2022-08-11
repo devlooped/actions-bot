@@ -38,21 +38,6 @@
 	sha = b9671b9e7f6235afbd8551dfedc1ab68a1a95c56
 	etag = be8306e21620c4e829f2ad67fd1d4c25d484179028301488e9f49b5007e27e02
 	weak
-[file "docs/footer.md"]
-	url = https://github.com/devlooped/oss/blob/main/docs/footer.md
-	sha = 06e7171fa1d1f49300278ebf11020b8d03ef44ac
-	etag = 2e47c8bba7ea60a722ce2bfc8a0222e27bc33f25073486523710383540dc6257
-	weak
-[file "docs/sponsors.md"]
-	url = https://github.com/devlooped/sponsors/blob/main/sponsors.md
-	sha = 0a67f1a43b12eabc5fe3229fd9c9239dd97fc645
-	etag = 39e8d18b010c445fb65046c8504c1a95d66d5b4c6aff2f859d030a98faf182de
-	weak
-[file ".github/workflows/release-notes.yml"]
-	url = https://github.com/devlooped/oss/blob/main/.github/workflows/release-notes.yml
-	sha = be8f625e4cf5c2c572c7e56ba6dc4c4935ab0c00
-	etag = d1de9cb9c403ed8632d22d4cc153ae63b075266b9ce638b9ac73fd47dd2bccc1
-	weak
 [file ".editorconfig"]
 	url = https://github.com/devlooped/oss/blob/main/.editorconfig
 	sha = 369cd2bd49ce032f616a2fcb4c997535dbe8d9aa

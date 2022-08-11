@@ -98,7 +98,7 @@ be present, as well as the `$GITHUB_ACTOR` which is used to default
 It would also be possible to just run `git` commands from a shell and 
 get the same defaults automatically.
 
-<!-- include docs/footer.md -->
+<!-- include https://github.com/devlooped/sponsors/raw/main/footer.md -->
 ## Sponsors 
 
 <!-- sponsors.md -->
@@ -118,4 +118,4 @@ get the same defaults automatically.
 
 [Learn more about GitHub Sponsors](https://github.com/sponsors)
 
-<!-- docs/footer.md -->
+<!-- https://github.com/devlooped/sponsors/raw/main/footer.md -->

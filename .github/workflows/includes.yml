@@ -1,4 +1,4 @@
-name: +M▼ includes
+name: +Mᐁ includes
 on: 
   workflow_dispatch:
   push:
@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: 🔍 defaults
-        uses: ./.github/workflows/defaults
+        uses: devlooped/actions-bot@v1
         env:
           GH_TOKEN_SECRET: ${{ secrets.GH_TOKEN }}
           BOT_NAME_SECRET: ${{ secrets.BOT_NAME }}

@@ -43,14 +43,14 @@ runs:
             fi
             echo "Using github_token from inputs"
             echo "GH_TOKEN=${{ inputs.github_token }}" >> $GITHUB_ENV
-            echo "::set-output name=bot-token::${{ inputs.github_token }}"
+            echo "bot-token=${{ inputs.github_token }}" >> $GITHUB_OUTPUT
           else
             echo "Using gh_token from inputs"
             echo "GH_TOKEN=${{ inputs.gh_token }}" >> $GITHUB_ENV
-            echo "::set-output name=bot-token::${{ inputs.gh_token }}"
+            echo "bot-token=${{ inputs.gh_token }}" >> $GITHUB_OUTPUT
           fi
         else
-          echo "::set-output name=bot-token::$GH_TOKEN"
+          echo "bot-token=$GH_TOKEN" >> $GITHUB_OUTPUT
         fi
 
         if [ -z "$BOT_NAME"]
@@ -65,7 +65,7 @@ runs:
           fi
           echo "BOT_NAME=$BOT_NAME" >> $GITHUB_ENV
         fi
-        echo "::set-output name=bot-name::$BOT_NAME"
+        echo "bot-name=$BOT_NAME" >> $GITHUB_OUTPUT
 
         if [ -z "$BOT_EMAIL"]
         then
@@ -79,7 +79,7 @@ runs:
           fi
           echo "BOT_EMAIL=$BOT_EMAIL" >> $GITHUB_ENV
         fi
-        echo "::set-output name=bot-email::$BOT_EMAIL"
+        echo "bot-email=$BOT_EMAIL" >> $GITHUB_OUTPUT
         
         if [ -z "$BOT_AUTHOR"]
         then
@@ -87,7 +87,7 @@ runs:
           BOT_AUTHOR="$BOT_NAME <$BOT_EMAIL>"
           echo "BOT_AUTHOR=$BOT_AUTHOR" >> $GITHUB_ENV
         fi
-        echo "::set-output name=bot-author::$BOT_AUTHOR"
+        echo "bot-author=$BOT_AUTHOR" >> $GITHUB_OUTPUT
 
         git config --global user.name $BOT_NAME
         git config --global user.email $BOT_EMAIL

@@ -1,8 +1,18 @@
 # Changelog
 
-## [v1](https://github.com/devlooped/actions-bot/tree/v1) (2022-08-09)
+## [v1](https://github.com/devlooped/actions-bot/tree/v1) (2022-11-15)
 
-[Full Changelog](https://github.com/devlooped/actions-bot/compare/v1.0.0...v1)
+[Full Changelog](https://github.com/devlooped/actions-bot/compare/v1.0.1...v1)
+
+## [v1.0.1](https://github.com/devlooped/actions-bot/tree/v1.0.1) (2022-11-15)
+
+[Full Changelog](https://github.com/devlooped/actions-bot/compare/v1.0.0...v1.0.1)
+
+**Merged pull requests:**
+
+- ⬆️ Bump files with dotnet-file sync [\#3](https://github.com/devlooped/actions-bot/pull/3) ([devlooped-bot](https://github.com/devlooped-bot))
+- +Mᐁ includes [\#2](https://github.com/devlooped/actions-bot/pull/2) ([github-actions[bot]](https://github.com/apps/github-actions))
+- ⬆️ Bump files with dotnet-file sync [\#1](https://github.com/devlooped/actions-bot/pull/1) ([devlooped-bot](https://github.com/devlooped-bot))
 
 ## [v1.0.0](https://github.com/devlooped/actions-bot/tree/v1.0.0) (2022-08-09)
 

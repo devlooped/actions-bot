@@ -1,8 +1,3 @@
-[file ".github/FUNDING.yml"]
-	url = https://github.com/devlooped/.github/blob/main/.github/FUNDING.yml
-	sha = 39f4c591716ff50dd035d2fade35e5822489ab7f
-	etag = a944c728facd033bbdfb4ff8d0ef10d0b3a457c277dc499458df0ffc7e6409da
-	weak
 [file ".github/workflows/dotnet-file.yml"]
 	url = https://github.com/devlooped/oss/blob/main/.github/workflows/dotnet-file.yml
 	sha = 8f45cf28f3935ad2760ffdcd1528106c82f0af83
@@ -13,25 +8,10 @@
 	sha = c78868eba59a3e04602434684f9eac241fef13fb
 	etag = 1c1705a3f0ed65e33c9133996ebaa100aa445a8b968b2904ad48fef938702006
 	weak
-[file "code-of-conduct.md"]
-	url = https://github.com/devlooped/oss/blob/main/code-of-conduct.md
-	sha = f72699c9d52f02e6a3411ef589f2a02007c5e5af
-	etag = 4857c01bb695f09bf6912d778951c3065d9dd565e5de3d0827f40432d0e4c613
-	weak
 [file "license.txt"]
 	url = https://github.com/devlooped/oss/blob/main/license.txt
 	sha = 0683ee777d7d878d4bf013d7deea352685135a05
 	etag = 2c6335b37e4ae05eea7c01f5d0c9d82b49c488f868a8b5ba7bff7c6ff01f3994
-	weak
-[file "security.md"]
-	url = https://github.com/devlooped/oss/blob/main/security.md
-	sha = a0f58a6d63e48ae6e55944c556d0bc94476dc8df
-	etag = fc8101fd914820db3e6b42d608dc46aefbc60c830ac721ed3917daead3727dbd
-	weak
-[file "support.md"]
-	url = https://github.com/devlooped/oss/blob/main/support.md
-	sha = a0f58a6d63e48ae6e55944c556d0bc94476dc8df
-	etag = 2d47e2fc4fdfa3515203d452674566e3df507461f9938f451a06d79deb687d24
 	weak
 [file ".github/workflows/changelog.yml"]
 	url = https://github.com/devlooped/oss/blob/main/.github/workflows/changelog.yml

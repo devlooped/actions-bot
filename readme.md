@@ -45,7 +45,7 @@ git config --global user.name $BOT_NAME
 git config --global user.email $BOT_EMAIL
 ```
 
-so that git commands can be run the resulting defaults already applied.
+so that git commands can be run with the resulting defaults already applied.
 
 ## Example
 
